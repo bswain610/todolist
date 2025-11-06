@@ -1,0 +1,11 @@
+A JavaScript promise can be in one of three key states:
+
+Pending: This is the initial state of a promise when it is neither fulfilled nor rejected. A promise remains in this state until it is resolved or rejected.
+
+Fulfilled: This state indicates that the promise has been successfully completed. The associated value of the promise becomes available for any .then() handlers registered.
+
+Rejected: In this state, the promise has failed to complete successfully. The reason for the failure can be captured, usually an error, and can be processed with .catch() handlers.
+
+When working with promises, it's crucial to understand that they are created using the new Promise constructor, which takes a callback function as its argument. Inside this function, you can use the two parameters, usually named resolve and reject, to transition the promise from the pending state to either the fulfilled or rejected state depending on the outcome of your asynchronous operation.
+
+These three states effectively define a promise's lifecycle and how it manages asynchronous operations in JavaScript. If you have any specific scenarios or examples you'd like to discuss, feel free to ask!
